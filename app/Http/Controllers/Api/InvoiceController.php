@@ -47,7 +47,6 @@ class InvoiceController extends Controller
         $this->setTotales($data);
         $this->setLegends($data);
 
-
         $sunat = new SunatService();
         $see = $sunat->getSee($company);
         $invoice = $sunat->getInvoice($data);
