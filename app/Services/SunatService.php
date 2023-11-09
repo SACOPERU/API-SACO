@@ -156,7 +156,7 @@ class SunatService
             ->setSerie($data['serie'] ?? null)
             ->setCorrelativo($data['correlativo'] ?? null)
             ->setFechaEmision(new DateTime($data['fechaEmision'] ?? null))
-            ->setCompany($this->getCompany($data['comppany']))
+            ->setCompany($this->getCompany($data['company']))
             ->setDestinatario($this->getClient($data['destinatario']))
             ->setEnvio($this->getEnvio($data['envio']))
             ->setDetails($this->getDespatchDetails($data['details']));
